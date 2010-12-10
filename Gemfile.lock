@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    joseph (0.0.1)
+    joseph (0.1.0)
 
 GEM
   remote: http://rubygems.org/
