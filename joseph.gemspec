@@ -12,10 +12,11 @@ Gem::Specification.new do |s|
   s.summary     = %q{Yet another take on application configuration}
   s.description = %q{Yet another take on application configuration}
 
-  s.rubyforge_project = "joseph"
-
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
   s.executables   = `git ls-files -- bin/*`.split("\n").map{ |f| File.basename(f) }
   s.require_paths = ["lib"]
+
+  s.add_development_dependency("rspec", ["~> 2.1.0"])
+  s.add_development_dependency("rake", ["~> 0.8.7"])
 end
